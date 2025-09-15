@@ -25,7 +25,8 @@ Check out the project live here: [Demo Link](https://codepen.io/lasiakoppaka/pen
 - **Frontend:** HTML, CSS, JavaScript (Vanilla)
 - **Tools:** VS Code, Git, GitHub
 - **APIs:**  
-🌦️ **Weather Forecast** | [Open-Meteo API](https://open-meteo.com/en/docs) | [Docs](https://open-meteo.com/en/docs) | Provides real-time weather data such as temperature, wind speed, and weather conditions. |
+
+ 🌦️ **Weather Forecast** | [Open-Meteo API](https://open-meteo.com/en/docs) | [Docs](https://open-meteo.com/en/docs) | Provides real-time weather data such as temperature, wind speed, and weather conditions. |
  
  🛒 **Shopping Products** | [Fake Store API](https://fakestoreapi.com/) | [Docs](https://fakestoreapi.com/) | Simulates e-commerce product data including images, titles, and prices. |
  
