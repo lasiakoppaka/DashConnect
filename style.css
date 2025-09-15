@@ -1,0 +1,157 @@
+/* ===== Theme ===== */
+:root{
+  --page-bg: #8fb4b0;         /* soft blue like the screenshot */
+  --header-bg: #ac8ea7;       /* cream banner */
+  --header-border: #111;
+  --card-bg: #ffffff;
+  --card-border: #1f2a44;     /* subtle navy outline */
+  --card-shadow: 0 2px 0 rgba(0,0,0,0.2);
+  --title-text: #111;
+  --muted: #444;
+  --input-border: #5b83ff;    /* “blue bars” look */
+  --btn-bg: #f4a261;          /* orange pill buttons */
+  --btn-bg-hover: #e38d43;
+  --btn-text: #111;
+  --radius-lg: 14px;
+  --radius-sm: 10px;
+  --gap: 16px;
+  --pad: 14px;
+  --font: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, "Apple Color Emoji","Segoe UI Emoji";
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font);
+  background: var(--page-bg);
+  color: var(--title-text);
+}
+
+/* ===== Header bar ===== */
+.page-header{
+  background: var(--header-bg);
+  border: 2px solid var(--header-border);
+  border-left: 0; border-right: 0;
+  padding: 14px 18px;
+}
+.page-header h1{
+  margin: 0 0 4px 0;
+  font-size: 24px;
+  font-weight: 800;
+}
+.page-header p{
+  margin: 0;
+  font-size: 12px;
+  color: var(--muted);
+}
+
+/* ===== Grid ===== */
+.grid{
+  width: min(1200px, 92%);
+  margin: 22px auto 40px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+}
+
+@media (max-width: 1200px){
+  .grid{ grid-template-columns: repeat(3, 1fr); }
+}
+@media (max-width: 900px){
+  .grid{ grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 600px){
+  .grid{ grid-template-columns: 1fr; }
+}
+
+/* ===== Card ===== */
+.card{
+  background: var(--card-bg);
+  border: 2px solid var(--card-border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--card-shadow);
+  display: flex;
+  flex-direction: column;
+  min-height: 240px;
+}
+
+.card-title{
+  padding: 10px 12px 8px;
+  border-bottom: 2px solid var(--card-border);
+  border-top-left-radius: var(--radius-lg);
+  border-top-right-radius: var(--radius-lg);
+  background: #f7f9ff;
+  font-size: 14px;
+  font-weight: 800;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-body{
+  padding: 10px 12px;
+  display: grid;
+  gap: 10px;
+  overflow: auto;
+  max-height: 260px; /* keeps cards tidy if content grows */
+}
+
+.card-actions{
+  padding: 10px 12px 14px;
+  margin-top: auto;            /* pins the button row to the bottom */
+  display: flex;
+  justify-content: center;
+}
+
+/* ===== Controls ===== */
+.input{
+  width: 100%;
+  height: 32px;
+  padding: 6px 8px;
+  border: 2px solid var(--input-border);
+  border-radius: 8px;
+  font-size: 13px;
+  outline: none;
+  background: #fff;
+}
+
+.input::placeholder{ color:#7b8baf; }
+
+.btn{
+  appearance: none;
+  border: 2px solid #00000055;
+  background: var(--btn-bg);
+  color: var(--btn-text);
+  font-weight: 700;
+  height: 34px;
+  padding: 0 18px;
+  border-radius: 999px;       /* pill */
+  cursor: pointer;
+  box-shadow: inset 0 -2px 0 rgba(0,0,0,0.15);
+}
+.btn:hover{ background: var(--btn-bg-hover); }
+
+/* ===== Output & media ===== */
+.output{
+  font-size: 13px;
+  color: #222;
+  line-height: 1.35;
+}
+
+img{
+  max-width: 100%;
+  border-radius: 8px;
+  display: block;
+}
+
+.sr-only{
+  position: absolute;
+  left: -9999px;
+  width: 1px; height: 1px;
+  overflow: hidden;
+}

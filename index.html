@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>API Dashboard Project</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="app.js"></script>
+</head>
+<body>
+  <!-- Top banner -->
+  <header class="page-header">
+    <h1>Welcome to my API showcase!</h1>
+    <p>Here are eight unique mini-applications. Have fun testing each of the APIs!</p>
+  </header>
+
+  <!-- Cards grid -->
+  <main class="grid">
+    <!-- Weather -->
+    <section class="card" id="weather-api">
+      <div class="card-title">
+        <span>Forecast </span>
+      </div>
+      <div class="card-body">
+        <label class="sr-only" for="weather-input">Weather Forecast</label>
+        <input id="weather-input" class="input" placeholder="Enter a city!" />
+        <div class="output" id="dog-output"></div>
+      </div>
+      <div class="card-actions">
+        <button class="btn" onclick="getWeatherImage()">Go!</button>
+      </div>
+    </section>
+
+    <!-- shopping -->
+    <section class="card" id="shopping-api">
+      <div class="card-title">
+        <span>Shopping</span>
+      </div>
+      <div class="card-body">
+        <div class="output" id="shopping-output"></div>
+      </div>
+      <div class="card-actions">
+        <button class="btn" onclick="getShoppingImage()">Browse</button>
+      </div>
+    </section>
+
+    <!-- Music API -->
+    <section class="card" id="music-api">
+      <div class="card-title">
+        <span>Music</span>
+      </div>
+      <div class="card-body">
+        <label class="sr-only" for="music-postcode">Postcode</label>
+        <input id="music-postcode" class="input" placeholder="Search any song!" />
+        <div class="output" id="weather-output"></div>
+      </div>
+      <div class="card-actions">
+        <button class="btn" onclick="getMusic()">Search</button>
+      </div>
+    </section>
+
+    <!-- Currency API -->
+    <section class="card" id="currency-api">
+      <div class="card-title">
+        <span>Currency 💱</span>
+      </div>
+      <div class="card-body">
+        <input class="input" id="cur-from" placeholder="From (e.g., USD)" />
+        <input class="input" id="cur-to" placeholder="To (e.g., EUR)" />
+        <input class="input" id="cur-amount" placeholder="Amount" />
+        <div class="output" id="currency-output"></div>
+      </div>
+      <div class="card-actions">
+        <button class="btn" onclick="getExchangeRates()">Convert!</button>
+      </div>
+    </section>
+
+    <!-- News API -->
+    <section class="card" id="news-api">
+      <div class="card-title">
+        <span>Trending News</span>
+      </div>
+      <div class="card-body">
+        <input class="input" id="news-query" placeholder="Search for the latest headline!" />
+        <div class="output" id="news-output"></div>
+      </div>
+      <div class="card-actions">
+        <button class="btn" onclick="getNews()">Search</button>
+      </div>
+    </section>
+
+    <!-- Dictionary API -->
+    <section class="card" id="dictionary-api">
+      <div class="card-title">
+        <span>Define this word 📘</span>
+      </div>
+      <div class="card-body">
+        <input class="input" id="dictionary-user" placeholder="Search a word!" />
+        <div class="output" id="dictionary-output"></div>
+      </div>
+      <div class="card-actions">
+        <button class="btn" onclick="getDictionary()">Search</button>
+      </div>
+    </section>
+
+    <!--Calender-->
+    <section class="card" id="joke-api">
+      <div class="card-title">
+        <span>Find Public Holidays!</span>
+      </div>
+      <div class="card-body">
+        <input class="input" id="calender-user" placeholder="e.g. US 2023 or AU 2014" />
+        <div class="output" id="calender-output"></div>
+      </div>
+      <div class="card-actions">
+        <button class="btn" onclick="getJoke()">Search</button>
+      </div>
+    </section>
+
+    <!-- Food images -->
+    <section class="card" id="food-api">
+      <div class="card-title">
+        <span>Random pictures of food dishes</span>
+      </div>
+      <div class="card-body">
+        <div class="output" id="food-output"></div>
+      </div>
+      <div class="card-actions">
+        <button class="btn" onclick="getPublicApiInfo()">Generate</button>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
