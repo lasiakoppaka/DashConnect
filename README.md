@@ -3,11 +3,18 @@
 DashConnect is a **single-page dashboard** that integrates multiple **public APIs** into one clean, user-friendly interface.  
 It was built to practice working with APIs, front-end design, and JavaScript logic — all in one project.
 
+Check out the project live here: [Demo Link](https://codepen.io/lasiakoppaka/pen/VYvOgXv) 
+
 ## 🚀 Features
 - **Multiple API Integrations** on one page:
   - Public Holidays API
   - Shopping/Product Data API
-  - [Add any other APIs you used]
+  - Weather Forecast API
+  - Music Search API
+  - Currency Conversion API
+  - Trending News API
+  - Dictionary API
+  - Random Food Images API
 - Clean and responsive design with a card-based layout.
 - Real-time API calls with dynamic content updates.
 - Beginner-friendly, lightweight tech stack (no frameworks required).
